@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#064e3b">
+<meta name="description" content="Sharma Associates - Vehicle Insurance, Car Insurance, Bike Insurance, Commercial Vehicle Insurance and Health Insurance in Khair, Aligarh.">
+<title>Sharma Associates | Insurance Made Simple</title>
+
+<style>
+/* ==================================================
+   SHARMA ASSOCIATES - PREMIUM EMERALD THEME
+   Colors: Emerald Green + Ivory + Orange
+================================================== */
+
+:root {
+  --green: #064e3b;
+  --green-dark: #022c22;
+  --green-light: #0f766e;
+  --mint: #d1fae5;
+  --orange: #f97316;
+  --orange-light: #ffedd5;
+  --cream: #fffdf7;
+  --white: #ffffff;
+  --text: #18332c;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 15px 40px rgba(6, 78, 59, 0.10);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+section {
+  padding: 85px 0;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 45px;
+}
+
+.eyebrow {
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.section-heading h2 {
+  color: var(--green);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+.section-line {
+  width: 65px;
+  height: 4px;
+  border-radius: 10px;
+  background: var(--orange);
+  margin: 18px auto;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(2, 44, 34, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.navbar {
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  color: white;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.brand span {
+  color: #fb923c;
+}
+
+.brand small {
+  display: block;
+  color: #a7f3d0;
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ecfdf5;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.nav-links a:hover {
+  color: #fb923c;
+}
+
+.nav-cta {
+  background: var(--orange);
+  color: white !important;
+  padding: 11px 17px;
+  border-radius: 30px;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  font-size: 25px;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(249,115,22,0.20), transparent 30%),
+    radial-gradient(circle at 70% 80%, rgba(16,185,129,0.18), transparent 35%),
+    linear-gradient(125deg, #022c22, #064e3b 55%, #0f766e);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -140px;
+  top: 40px;
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  right: -55px;
+  top: 125px;
+  border: 1px solid rgba(249,115,22,0.35);
+  border-radius: 50%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  padding: 90px 0;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 15px;
+  border: 1px solid rgba(167,243,208,0.45);
+  border-radius: 30px;
+  color: #d1fae5;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.hero-tag span {
+  width: 8px;
+  height: 8px;
+  background: #fb923c;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.1;
+  margin-bottom: 22px;
+  letter-spacing: -1.5px;
+}
+
+.hero h1 em {
+  color: #fdba74;
+  font-style: normal;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 17px;
+  color: #d1fae5;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 23px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 800;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-orange {
+  background: var(--orange);
+  color: white;
+  box-shadow: 0 8px 22px rgba(249,115,22,0.25);
+}
+
+.btn-white {
+  background: white;
+  color: var(--green);
+}
+
+.btn-green {
+  background: var(--green);
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+/* TRUST STRIP */
+
+.trust-strip {
+  background: white;
+  border-bottom: 1px solid var(--border);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.trust-item strong {
+  display: block;
+  color: var(--green);
+  font-size: 17px;
+}
+
+.trust-item span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* INSURANCE SERVICES */
+
+.services {
+  background: var(--cream);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.service-card {
+  background: white;
+  padding: 30px 23px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(6,78,59,0.04);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow);
+  border-color: #a7f3d0;
+}
+
+.service-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: var(--mint);
+  border-radius: 16px;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: var(--green);
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.text-link {
+  color: var(--orange);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/* ABOUT */
+
+.about {
+  background: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-visual {
+  min-height: 370px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 80% 20%, #fdba74, transparent 30%),
+    linear-gradient(135deg, #d1fae5, #ecfdf5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-visual .big-icon {
+  font-size: 125px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-visual .visual-badge {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background: var(--green);
+  color: white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-weight: 800;
+}
+
+.about-content .eyebrow {
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  color: var(--green);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.about-content p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.check-list {
+  list-style: none;
+  margin: 22px 0;
+}
+
+.check-list li {
+  margin: 12px 0;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.check-list li::before {
+  content: "✓";
+  color: var(--orange);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+/* PROCESS */
+
+.process {
+  background: #ecfdf5;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.process-card {
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  padding: 28px 20px;
+  border: 1px solid #d1fae5;
+}
+
+.process-number {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: white;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.process-card h3 {
+  color: var(--green);
+  margin-bottom: 9px;
+}
+
+.process-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ENQUIRY FORM */
+
+.enquiry {
+  background: white;
+}
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.form-info {
+  background: linear-gradient(145deg, var(--green-dark), var(--green-light));
+  color: white;
+  padding: 35px;
+  border-radius: 25px;
+}
+
+.form-info h3 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.form-info p {
+  color: #d1fae5;
+  margin-bottom: 22px;
+}
+
+.form-info .info-line {
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.form-info .info-line strong {
+  color: #fdba74;
+}
+
+.form-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  padding: 35px;
+  box-shadow: var(--shadow);
+}
+
+.form-card h3 {
+  color: var(--green);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5e3dc;
+  background: white;
+  border-radius: 11px;
+  outline: none;
+  color: var(--text);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--green-light);
+  box-shadow: 0 0 0 3px rgba(15,118,110,0.10);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-submit {
+  margin-top: 22px;
+  width: 100%;
+}
+
+/* TOOLS */
+
+.tools {
+  background: var(--cream);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.tool-card {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(6,78,59,0.04);
+}
+
+.tool-card h3 {
+  color: var(--green);
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.tool-card > p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* QR CODE */
+
+.qr-section {
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  color: white;
+}
+
+.qr-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.qr-content h2 {
+  font-size: clamp(27px, 4vw, 40px);
+  margin-bottom: 15px;
+}
+
+.qr-content p {
+  color: #d1fae5;
+  max-width: 600px;
+}
+
+.qr-box {
+  background: white;
+  color: var(--green);
+  border-radius: 22px;
+  padding: 22px;
+  text-align: center;
+  min-width: 220px;
+}
+
+.qr-box img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 12px;
+}
+
+.qr-box strong {
+  display: block;
+  font-size: 14px;
+}
+
+/* CONTACT */
+
+.contact {
+  background: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.contact-card {
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  text-align: center;
+}
+
+.contact-card .icon {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.contact-card h3 {
+  color: var(--green);
+  margin-bottom: 9px;
+}
+
+.contact-card p,
+.contact-card a {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--green-dark);
+  color: white;
+  padding: 55px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 35px;
+  margin-bottom: 35px;
+}
+
+footer h3 {
+  color: #fdba74;
+  margin-bottom: 15px;
+}
+
+footer p,
+footer a {
+  color: #d1fae5;
+  font-size: 14px;
+}
+
+footer a {
+  display: block;
+  margin: 8px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 20px;
+  text-align: center;
+  color: #a7f3d0;
+  font-size: 12px;
+}
+
+/* FLOATING BUTTONS */
+
+.float-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.float-buttons a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.float-wa {
+  background: #16a34a;
+}
+
+.float-call {
+  background: var(--orange);
+}
+
+/* ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .services-grid,
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid,
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .navbar {
+    min-height: 70px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--green-dark);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 5%;
+    gap: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 13px 0;
+    font-size: 14px;
+  }
+
+  .nav-cta {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .hero {
+    min-height: 550px;
+  }
+
+  .hero-content {
+    padding: 70px 0;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid,
+  .process-grid,
+  .tools-grid,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card,
+  .form-info,
+  .tool-card {
+    padding: 23px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field.full {
+    grid-column: auto;
+  }
+
+  .qr-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .qr-box {
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container navbar">
+
+    <a href="#home" class="brand">
+      SHARMA <span>ASSOCIATES</span>
+      <small>INSURANCE SERVICES</small>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#enquiry">Get Quote</a>
+      <a href="#tools">Customer Help</a>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="hero-tag">
+        <span></span>
+        YOUR INSURANCE ASSISTANCE PARTNER
+      </div>
+
+      <h1>
+        Protect What<br>
+        Matters <em>Most.</em>
+      </h1>
+
+      <p>
+        Welcome to Sharma Associates. Get assistance for Car Insurance,
+        Bike Insurance, Commercial Vehicle Insurance and Health Insurance.
+        We help you understand your insurance options and renewal process.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#enquiry" class="btn btn-orange">Get Insurance Quote ↗</a>
+        <a href="https://wa.me/919690754950" target="_blank"
+           rel="noopener" class="btn btn-white">WhatsApp Us</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <strong>🚗 Vehicle Insurance</strong>
+      <span>Car, Bike & Commercial</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>📋 Policy Assistance</strong>
+      <span>Enquiry & Renewal Support</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>🤝 Customer Support</strong>
+      <span>Guidance when you need it</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>📍 Khair, Aligarh</strong>
+      <span>Uttar Pradesh</span>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">OUR SERVICES</span>
+      <h2>Insurance Solutions for Your Needs</h2>
+      <div class="section-line"></div>
+      <p>
+        Explore insurance categories and contact Sharma Associates
+        for assistance with your insurance enquiry.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">🚘</div>
+        <h3>Car Insurance</h3>
+        <p>
+          Assistance for comprehensive, third-party and car policy renewal enquiries.
+        </p>
+        <a href="#enquiry" class="text-link">Get Car Quote →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🏍️</div>
+        <h3>Bike Insurance</h3>
+        <p>
+          Get help with two-wheeler insurance enquiries and policy renewals.
+        </p>
+        <a href="#enquiry" class="text-link">Get Bike Quote →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🚚</div>
+        <h3>Commercial Vehicle</h3>
+        <p>
+          Assistance for commercial vehicle insurance and related enquiries.
+        </p>
+        <a href="#enquiry" class="text-link">Get Commercial Quote →</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🏥</div>
+        <h3>Health Insurance</h3>
+        <p>
+          Contact us for health insurance information and assistance.
+        </p>
+        <a href="#enquiry" class="text-link">Health Insurance Enquiry →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-visual reveal">
+      <div class="big-icon">🛡️</div>
+      <div class="visual-badge">
+        SHARMA ASSOCIATES<br>
+        <small>Insurance Services</small>
+      </div>
+    </div>
+
+    <div class="about-content reveal">
+
+      <span class="eyebrow">ABOUT OUR BUSINESS</span>
+
+      <h2>Insurance Guidance with Customer Focus</h2>
+
+      <p>
+        Sharma Associates provides insurance enquiry and customer assistance
+        services in Khair, Aligarh, Uttar Pradesh. Our aim is to help customers
+        understand policy options, renewal requirements and insurance-related
+        support.
+      </p>
+
+      <ul class="check-list">
+        <li>Car and Two-Wheeler Insurance Assistance</li>
+        <li>Commercial Vehicle Insurance Enquiries</li>
+        <li>Policy Renewal Assistance</li>
+        <li>Customer Enquiry Support</li>
+      </ul>
+
+      <a href="#contact" class="btn btn-green">Contact Sharma Associates</a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2>Simple Insurance Enquiry Process</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-card reveal">
+        <div class="process-number">1</div>
+        <h3>Share Details</h3>
+        <p>Fill out the insurance enquiry form with your basic details.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <div class="process-number">2</div>
+        <h3>Get Assistance</h3>
+        <p>Our team can contact you to understand your requirement.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <div class="process-number">3</div>
+        <h3>Explore Options</h3>
+        <p>Review available insurance options and insurer terms.</p>
+      </div>
+
+      <div class="process-card reveal">
+        <div class="process-number">4</div>
+        <h3>Policy Support</h3>
+        <p>Get assistance with your policy-related enquiry.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- MAIN ENQUIRY FORM -->
+<section class="enquiry" id="enquiry">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">GET IN TOUCH</span>
+      <h2>Request an Insurance Quote</h2>
+      <div class="section-line"></div>
+      <p>Fill in the form. Your enquiry will open in WhatsApp.</p>
+    </div>
+
+    <div class="form-layout">
+
+      <div class="form-info">
+        <h3>Let's Help You</h3>
+        <p>
+          Share your insurance requirement with Sharma Associates.
+          Our team can assist you with the next steps.
+        </p>
+
+        <div class="info-line">
+          <strong>📞 Phone</strong><br>
+          9690754950
+        </div>
+
+        <div class="info-line">
+          <strong>📱 WhatsApp</strong><br>
+          9690754950
+        </div>
+
+        <div class="info-line">
+          <strong>📍 Location</strong><br>
+          Khair, Aligarh, Uttar Pradesh
+        </div>
+
+        <div class="info-line">
+          <strong>PBPartners Partner Code</strong><br>
+          IP25201
+        </div>
+      </div>
+
+
+      <div class="form-card">
+        <h3>Insurance Enquiry Form</h3>
+
+        <form id="insuranceForm">
+
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="name">Customer Name *</label>
+              <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="field">
+              <label for="mobile">Mobile Number *</label>
+              <input id="mobile" type="tel" maxlength="10"
+                     pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+            </div>
+
+            <div class="field">
+              <label for="insuranceType">Insurance Type *</label>
+              <select id="insuranceType" required>
+                <option value="">Select Insurance</option>
+                <option>Car Insurance</option>
+                <option>Bike Insurance</option>
+                <option>Commercial Vehicle Insurance</option>
+                <option>Health Insurance</option>
+                <option>Other Insurance</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="preferredCompany">Preferred Insurance Company</label>
+              <select id="preferredCompany">
+                <option value="Any available insurer">Any available insurer</option>
+                <option>HDFC ERGO</option>
+                <option>ICICI Lombard</option>
+                <option>Bajaj Allianz</option>
+                <option>Tata AIG</option>
+                <option>New India Assurance</option>
+                <option>United India Insurance</option>
+                <option>Other / Not sure</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="registration">Vehicle Registration Number</label>
+              <input id="registration" type="text" placeholder="e.g. UP 81 AB 1234">
+            </div>
+
+            <div class="field">
+              <label for="vehicleCompany">Vehicle Company</label>
+              <input id="vehicleCompany" type="text" placeholder="e.g. Maruti, Honda">
+            </div>
+
+            <div class="field">
+              <label for="vehicleModel">Vehicle Model</label>
+              <input id="vehicleModel" type="text" placeholder="e.g. Swift, Activa">
+            </div>
+
+            <div class="field">
+              <label for="vehicleYear">Manufacturing Year</label>
+              <select id="vehicleYear">
+                <option value="">Select year</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="expiry">Policy Expiry Date</label>
+              <input id="expiry" type="date">
+            </div>
+
+            <div class="field">
+              <label for="policyType">Policy Type</label>
+              <select id="policyType">
+                <option value="Not sure">Not sure</option>
+                <option>Comprehensive</option>
+                <option>Third Party</option>
+                <option>Own Damage</option>
+                <option>Package Policy</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="message">Additional Message</label>
+              <textarea id="message" placeholder="Write your requirement here..."></textarea>
+            </div>
+
+          </div>
+
+          <button class="btn btn-orange form-submit" type="submit">
+            Send Enquiry on WhatsApp →
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CUSTOMER HELP / TOOLS -->
+<section class="tools" id="tools">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">CUSTOMER HELP DESK</span>
+      <h2>Quick Assistance</h2>
+      <div class="section-line"></div>
+      <p>Use the forms below to send your request directly to WhatsApp.</p>
+    </div>
+
+    <div class="tools-grid">
+
+      <!-- PREMIUM ESTIMATE REQUEST -->
+      <div class="tool-card reveal">
+        <h3>💰 Premium Estimate Enquiry</h3>
+        <p>Share vehicle details to request a premium estimate.</p>
+
+        <form id="premiumRequest">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="calcVehicle">Vehicle Type</label>
+              <select id="calcVehicle" required>
+                <option value="">Select vehicle</option>
+                <option>Car</option>
+                <option>Bike</option>
+                <option>Commercial Vehicle</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="calcFuel">Fuel Type</label>
+              <select id="calcFuel" required>
+                <option value="">Select fuel</option>
+                <option>Petrol</option>
+                <option>Diesel</option>
+                <option>CNG</option>
+                <option>Electric</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="calcYear">Manufacturing Year</label>
+              <input id="calcYear" type="number" min="1990"
+                     max="2099" placeholder="e.g. 2022" required>
+            </div>
+
+            <div class="field">
+              <label for="calcRto">City / RTO</label>
+              <input id="calcRto" type="text" placeholder="e.g. Aligarh" required>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-green form-submit">
+            Request Estimate →
+          </button>
+        </form>
+      </div>
+
+
+      <!-- RENEWAL REMINDER -->
+      <div class="tool-card reveal">
+        <h3>🔔 Policy Renewal Assistance</h3>
+        <p>Send your policy renewal request.</p>
+
+        <form id="renewalRequest">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="renewName">Name</label>
+              <input id="renewName" type="text" required>
+            </div>
+
+            <div class="field">
+              <label for="renewMobile">Mobile Number</label>
+              <input id="renewMobile" type="tel" pattern="[0-9]{10}"
+                     maxlength="10" required>
+            </div>
+
+            <div class="field">
+              <label for="renewDate">Policy Expiry Date</label>
+              <input id="renewDate" type="date" required>
+            </div>
+
+            <div class="field">
+              <label for="renewType">Insurance Type</label>
+              <select id="renewType" required>
+                <option value="">Select</option>
+                <option>Car</option>
+                <option>Bike</option>
+                <option>Commercial Vehicle</option>
+                <option>Health</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-orange form-submit">
+            Send Renewal Request →
+          </button>
+        </form>
+      </div>
+
+
+      <!-- CLAIM ASSISTANCE -->
+      <div class="tool-card reveal">
+        <h3>🧾 Claim Assistance</h3>
+        <p>Send a claim assistance request to our team.</p>
+
+        <form id="claimRequest">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="claimName">Name</label>
+              <input id="claimName" type="text" required>
+            </div>
+
+            <div class="field">
+              <label for="claimMobile">Mobile Number</label>
+              <input id="claimMobile" type="tel" maxlength="10"
+                     pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="field">
+              <label for="claimType">Claim Type</label>
+              <select id="claimType" required>
+                <option value="">Select</option>
+                <option>Car Claim</option>
+                <option>Bike Claim</option>
+                <option>Commercial Vehicle Claim</option>
+                <option>Health Claim</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="claimDetails">Claim Details</label>
+              <textarea id="claimDetails" required
+                        placeholder="Briefly describe the claim requirement"></textarea>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-green form-submit">
+            Request Claim Help →
+          </button>
+        </form>
+      </div>
+
+
+      <!-- DOCUMENT ENQUIRY -->
+      <div class="tool-card reveal">
+        <h3>📁 Document Assistance</h3>
+        <p>Tell us what documents you need help with.</p>
+
+        <form id="documentRequest">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="docName">Name</label>
+              <input id="docName" type="text" required>
+            </div>
+
+            <div class="field">
+              <label for="docMobile">Mobile Number</label>
+              <input id="docMobile" type="tel" maxlength="10"
+                     pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="field full">
+              <label for="docPurpose">Purpose</label>
+              <select id="docPurpose" required>
+                <option value="">Select purpose</option>
+                <option>Policy Copy</option>
+                <option>Renewal Documents</option>
+                <option>Claim Documents</option>
+                <option>Vehicle Documents</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="docFiles">Select Files (optional)</label>
+              <input id="docFiles" type="file" accept=".pdf,.jpg,.jpeg,.png" multiple>
+              <small id="docFileNames" style="color:#64748b">
+                Files are selected locally only. They are not uploaded.
+              </small>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-orange form-submit">
+            Send Document Enquiry →
+          </button>
+        </form>
+      </div>
+
+
+      <!-- FOLLOW-UP REQUEST -->
+      <div class="tool-card reveal">
+        <h3>📞 Request a Call Back</h3>
+        <p>Request our team to contact you.</p>
+
+        <form id="followRequest">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="followName">Name</label>
+              <input id="followName" type="text" required>
+            </div>
+
+            <div class="field">
+              <label for="followMobile">Mobile Number</label>
+              <input id="followMobile" type="tel" maxlength="10"
+                     pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="field full">
+              <label for="followTopic">Regarding</label>
+              <select id="followTopic" required>
+                <option value="">Select topic</option>
+                <option>New Insurance</option>
+                <option>Policy Renewal</option>
+                <option>Claim Assistance</option>
+                <option>Policy Documents</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-green form-submit">
+            Request Call Back →
+          </button>
+        </form>
+      </div>
+
+
+      <!-- FEEDBACK -->
+      <div class="tool-card reveal">
+        <h3>⭐ Customer Feedback</h3>
+        <p>Share your feedback with Sharma Associates.</p>
+
+        <form id="reviewRequest">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="reviewName">Name</label>
+              <input id="reviewName" type="text" required>
+            </div>
+
+            <div class="field">
+              <label for="reviewRating">Rating</label>
+              <select id="reviewRating" required>
+                <option value="">Select rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="reviewText">Feedback</label>
+              <textarea id="reviewText" required
+                        placeholder="Write your feedback"></textarea>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-orange form-submit">
+            Send Feedback →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- WEBSITE QR CODE -->
+<section class="qr-section">
+  <div class="container qr-layout">
+
+    <div class="qr-content">
+      <span class="eyebrow" style="color:#fdba74">SCAN & CONNECT</span>
+      <h2>Visit Sharma Associates Website</h2>
+      <p>
+        Scan this QR code with your mobile camera to open our website.
+        You can share this QR code with customers after the website is hosted
+        on a public domain.
+      </p>
+
+      <p style="margin-top:18px;font-size:13px">
+        <strong>Website:</strong>
+        <span id="websiteAddress">Loading website address...</span>
+      </p>
+    </div>
+
+    <div class="qr-box">
+      <img id="websiteQR" src="" alt="Sharma Associates Website QR Code">
+      <strong>SHARMA ASSOCIATES</strong>
+      <small>Scan to visit website</small>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">CONTACT US</span>
+      <h2>Get in Touch with Sharma Associates</h2>
+      <div class="section-line"></div>
+      <p>For insurance enquiry, renewal assistance and customer support.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card reveal">
+        <div class="icon">📞</div>
+        <h3>Call Us</h3>
+        <a href="tel:9690754950">9690754950</a><br>
+        <a href="tel:8475864633">8475864633</a>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="icon">💬</div>
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/919690754950"
+           target="_blank" rel="noopener">Chat with us</a>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="icon">📍</div>
+        <h3>Our Location</h3>
+        <p>Khair, Aligarh, Uttar Pradesh</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>SHARMA ASSOCIATES</h3>
+        <p>
+          Insurance enquiry and customer assistance services for vehicle
+          insurance and other insurance requirements.
+        </p>
+        <p style="margin-top:12px">
+          PBPartners POSP Partner Code: <strong>IP25201</strong>
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#services">Insurance Services</a>
+        <a href="#about">About Us</a>
+        <a href="#enquiry">Get Quote</a>
+        <a href="#tools">Customer Help</a>
+      </div>
+
+      <div>
+        <h3>Contact Details</h3>
+        <a href="tel:9690754950">9690754950</a>
+        <a href="tel:8475864633">8475864633</a>
+        <a href="https://wa.me/919690754950" target="_blank" rel="noopener">
+          WhatsApp Sharma Associates
+        </a>
+        <p>Khair, Aligarh, Uttar Pradesh</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Sharma Associates. All Rights Reserved.</p>
+      <p>PBPartners POSP Partner Code: IP25201</p>
+
+      <p style="margin-top:12px">
+        Insurance products are subject to insurer terms, conditions,
+        underwriting and applicable authorization. This website is an
+        enquiry platform and does not itself issue insurance policies.
+        Premium estimates are not official insurer quotes.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- FLOATING WHATSAPP AND CALL BUTTONS -->
+<div class="float-buttons">
+
+  <a class="float-wa"
+     href="https://wa.me/919690754950"
+     target="_blank"
+     rel="noopener"
+     aria-label="WhatsApp Sharma Associates">
+    ☎
+  </a>
+
+  <a class="float-call"
+     href="tel:9690754950"
+     aria-label="Call Sharma Associates">
+    ☎
+  </a>
+
+</div>
+
+
+<script>
+/* ==========================================
+   SHARMA ASSOCIATES WEBSITE JAVASCRIPT
+========================================== */
+
+// Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
+// Mobile navigation
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function() {
+  navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll("#navLinks a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navLinks.classList.remove("active");
+  });
+});
+
+
+// Populate vehicle manufacturing years
+const yearSelect = document.getElementById("vehicleYear");
+const currentYear = new Date().getFullYear();
+
+for (let year = currentYear; year >= 1990; year--) {
+  const option = document.createElement("option");
+  option.value = year;
+  option.textContent = year;
+  yearSelect.appendChild(option);
+}
+
+
+// WhatsApp helper
+const WHATSAPP_NUMBER = "919690754950";
+
+function sendWhatsApp(message) {
+  const url = "https://wa.me/" + WHATSAPP_NUMBER +
+              "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank", "noopener");
+}
+
+
+// Main insurance enquiry form
+document.getElementById("insuranceForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const mobile = document.getElementById("mobile").value.trim();
+  const insuranceType = document.getElementById("insuranceType").value;
+
+  if (!/^[0-9]{10}$/.test(mobile)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    return;
+  }
+
+  const details = {
+    "Customer Name": name,
+    "Customer Mobile": mobile,
+    "Insurance Type": insuranceType,
+    "Preferred Company": document.getElementById("preferredCompany").value,
+    "Vehicle Registration": document.getElementById("registration").value.trim() || "Not provided",
+    "Vehicle Company": document.getElementById("vehicleCompany").value.trim() || "Not provided",
+    "Vehicle Model": document.getElementById("vehicleModel").value.trim() || "Not provided",
+    "Manufacturing Year": document.getElementById("vehicleYear").value || "Not provided",
+    "Policy Expiry Date": document.getElementById("expiry").value || "Not provided",
+    "Policy Type": document.getElementById("policyType").value || "Not provided",
+    "Additional Message": document.getElementById("message").value.trim() || "Not provided"
+  };
+
+  let message = "NEW INSURANCE ENQUIRY\n";
+  message += "SHARMA ASSOCIATES\n";
+  message += "--------------------------\n";
+
+  for (const [key, value] of Object.entries(details)) {
+    message += key + ": " + value + "\n";
+  }
+
+  message += "--------------------------\n";
+  message += "PBPartners Code: IP25201";
+
+  sendWhatsApp(message);
+});
+
+
+// Premium estimate request
+document.getElementById("premiumRequest").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const message =
+    "Hello Sharma Associates, I want a premium estimate.\n" +
+    "Vehicle: " + document.getElementById("calcVehicle").value + "\n" +
+    "Fuel: " + document.getElementById("calcFuel").value + "\n" +
+    "Manufacturing Year: " + document.getElementById("calcYear").value + "\n" +
+    "City/RTO: " + document.getElementById("calcRto").value + "\n" +
+    "Please guide me with an authorised quote.\n" +
+    "PBPartners Code: IP25201";
+
+  sendWhatsApp(message);
+});
+
+
+// Policy renewal request
+document.getElementById("renewalRequest").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const message =
+    "Hello Sharma Associates, please contact me for policy renewal.\n" +
+    "Name: " + document.getElementById("renewName").value.trim() + "\n" +
+    "Mobile: " + document.getElementById("renewMobile").value.trim() + "\n" +
+    "Expiry Date: " + document.getElementById("renewDate").value + "\n" +
+    "Insurance Type: " + document.getElementById("renewType").value;
+
+  sendWhatsApp(message);
+});
+
+
+// Claim assistance request
+document.getElementById("claimRequest").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const message =
+    "Hello Sharma Associates, I need claim assistance.\n" +
+    "Name: " + document.getElementById("claimName").value.trim() + "\n" +
+    "Mobile: " + document.getElementById("claimMobile").value.trim() + "\n" +
+    "Claim Type: " + document.getElementById("claimType").value + "\n" +
+    "Details: " + document.getElementById("claimDetails").value.trim();
+
+  sendWhatsApp(message);
+});
+
+
+// Document enquiry
+document.getElementById("documentRequest").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const selectedFiles = Array.from(document.getElementById("docFiles").files)
+    .map(file => file.name)
+    .join(", ") || "None";
+
+  const message =
+    "Hello Sharma Associates, I need document assistance.\n" +
+    "Name: " + document.getElementById("docName").value.trim() + "\n" +
+    "Mobile: " + document.getElementById("docMobile").value.trim() + "\n" +
+    "Purpose: " + document.getElementById("docPurpose").value + "\n" +
+    "Selected Files: " + selectedFiles + "\n" +
+    "Please tell me a secure way to share the documents. Files are not attached automatically.";
+
+  sendWhatsApp(message);
+});
+
+
+// Customer feedback
+document.getElementById("reviewRequest").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const message =
+    "Customer Feedback for Sharma Associates\n" +
+    "Name: " + document.getElementById("reviewName").value.trim() + "\n" +
+    "Rating: " + document.getElementById("reviewRating").value + "/5\n" +
+    "Feedback: " + document.getElementById("reviewText").value.trim();
+
+  sendWhatsApp(message);
+});
+
+
+// Callback request
+document.getElementById("followRequest").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const message =
+    "Hello Sharma Associates, please call me back.\n" +
+    "Name: " + document.getElementById("followName").value.trim() + "\n" +
+    "Mobile: " + document.getElementById("followMobile").value.trim() + "\n" +
+    "Regarding: " + document.getElementById("followTopic").value;
+
+  sendWhatsApp(message);
+});
+
+
+// Display selected document names
+const docFiles = document.getElementById("docFiles");
+const docFileNames = document.getElementById("docFileNames");
+
+docFiles.addEventListener("change", function() {
+  if (docFiles.files.length) {
+    docFileNames.textContent =
+      Array.from(docFiles.files).map(file => file.name).join(", ") +
+      " — selected locally only; not uploaded.";
+  } else {
+    docFileNames.textContent =
+      "Files are selected locally only. They are not uploaded.";
+  }
+});
+
+
+// Website QR Code generator
+// QR code uses the current page URL.
+// Once website is hosted, it will encode the public website URL.
+const currentWebsiteURL = window.location.href;
+
+document.getElementById("websiteAddress").textContent = currentWebsiteURL;
+
+const qrImageURL =
+  "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=" +
+  encodeURIComponent(currentWebsiteURL);
+
+document.getElementById("websiteQR").src = qrImageURL;
+
+
+// Scroll reveal animation
+const revealItems = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealItems.forEach(function(item) {
+    observer.observe(item);
+  });
+} else {
+  revealItems.forEach(function(item) {
+    item.classList.add("visible");
+  });
+}
+
+</script>
+
+</body>
+</html>

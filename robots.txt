@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sharma-associates-green.vercel.app/sitemap.xml
